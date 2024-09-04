@@ -1,0 +1,14 @@
+class Solution:
+    def isPalindrome(self, s: str) -> bool:
+        cleaned_s = ""
+        for i in s:
+            if i.isalpha() or i.isdigit():
+                #print(i)
+                cleaned_s += i.lower()
+        print(cleaned_s)
+        return (cleaned_s == cleaned_s[::-1])
+
+obj1 = Solution()
+s = "Was it a car or a cat I saw?"
+s1 ="0P"
+print(obj1.isPalindrome(s1))
