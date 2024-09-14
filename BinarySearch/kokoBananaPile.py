@@ -24,13 +24,16 @@ class Solution:
                 timeTaken += ceil(banana/estK)
             print(timeTaken)
             if timeTaken < h:
-                res = h
+                res = estK
+                print("Updating res to {}".format(res))
                 h_rate = estK-1
             else:
                 l_rate = estK + 1
         return res
 
 obj = Solution()
-pile1,h1 = [25,10,23,4], 4
+pile1,h1 = [1,4,3,2], 9
+piles2=[25,10,23,4]
+h2=4
 print(obj.minEatingSpeed(pile1, h1))
         
