@@ -1,1 +1,1 @@
-print(ord("a")-97)
+a = "abc"
